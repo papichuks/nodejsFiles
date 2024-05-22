@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple form</title>
+  </head>
+  <body>
+    <form action="/submit" method="POST">
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        pattern="[a-zA-Z]*"
+        minlength="2"
+        required
+      /><br />
+      <label for="lname">Last name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        pattern="[a-zA-Z]*"
+        minlength="2"
+        required
+      /><br />
+      <label for="oname">Other name:</label><br />
+      <input type="text" id="oname" name="oname" /><br />
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="phone">Phone number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        minlength="11"
+        maxlength="11"
+      /><br />
+      <label for="gender">Select Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select a gender</option>
+        <hr />
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+    <a href="/list">View Database.json information</a>
+    <a href="github.com/papichuks">my github</a>
+    <script src="./index.js"></script>
+  </body>
+</html>
